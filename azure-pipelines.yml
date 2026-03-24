@@ -112,9 +112,9 @@ stages:
 - stage: Deploy
   jobs:
   - deployment: TestDeploy
-    environment:
-      name: 'my-vm-deploy-group'
-      resourceType: VirtualMachine
+    environment: 'my-vm-deploy-group'
+      # name: 'my-vm-deploy-group'
+      # resourceType: VirtualMachine
 
     strategy:
       runOnce:
